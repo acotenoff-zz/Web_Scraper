@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# TODO recursively crawl webpages
+# TODO output to file
 """web_scraper.py: Requests a web page and scrapes for email addresses"""
 
 import urllib2
