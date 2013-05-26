@@ -5,7 +5,7 @@
 import urllib2
 import re
 
-EMAIL_REGEX = re.compile('([^@]+@[^@]+\.[^@]+)')
+EMAIL_REGEX = re.compile("[-a-zA-Z0-9._]+@[-a-zA-Z0-9_]+.[a-zA-Z0-9_.]+")
 
 """requests the given url and returns the html code"""
 def requestPage(url):
@@ -26,8 +26,8 @@ def requestPage(url):
 
 """given html code, searches it for email addresses using a regular expression"""
 def emailSearch(html):
-	matches = re.search(EMAIL_REGEX, html, flags=0)
-	print matches.group()
+	matches = re.findall(EMAIL_REGEX, html)
+	print Email Addresses =matches
 
 
 def main():
