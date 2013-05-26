@@ -1,1 +1,5 @@
 Web_Scraper.py
+ 
+Web Scraper
+------------
+A simple web scraper that requests a webpage and searches it for email addresses.
